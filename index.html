@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+       <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+        <style>
+            .top {
+                height:550px; 
+                width:100%; 
+                z-index: 1;
+                top:0px;
+                background: url(img/header_bg2.jpg) center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-repeat:no-repeat;
+                background-position: 0 -100px;
+                box-shadow: 0 4px 2px -2px gray;
+            }
+
+
+            .main_content {
+               width:100%;
+               margin-top:3px;
+               padding-top:20px;
+               z-index:1000;
+               position: relative;
+               background-color: white;
+               background: url(img/brillant.png);
+            }
+
+            .container {
+
+            }
+
+            .footer {
+                height:300px; 
+                width:100%; 
+                z-index: 1;
+                background: url(img/header_bg2.jpg) center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-repeat:no-repeat;
+                background-position: 0 430px;
+                opacity:0.5;
+            }  
+
+            .menu 
+            {
+                width:75%;
+                margin:0 auto;
+               
+            }
+
+            .items {
+                float:right;
+                font-size:35px;
+                color:white;
+                font-weight: bold;
+                font-family: 'Open Sans Condensed', sans-serif;
+            }
+
+            .items a
+            {
+                text-shadow: 1px 1px 2px #000000;
+                filter: dropshadow(color=#000000, offx=1, offy=1);
+                color:white;
+                padding-left:10px;
+                padding-right: 10px;
+            }
+
+            .text_header 
+            {
+                width:55%;
+                margin:0 auto;
+                text-align: center;
+                padding-top:200px;
+                font-size:36px;
+                font-family: 'Oswald', sans-serif;
+                text-shadow: 2px 2px 5px #1C1C1C;
+                filter: dropshadow(color=#1C1C1C, offx=2, offy=2);
+                color:white;
+                line-height: 50px;
+            }
+
+            .menu_container {
+                position:fixed;
+                z-index:1001;
+                height:40px;
+                padding-top: 40px;
+            }
+            .makeDark {
+               
+                background: rgb(255,255,255); /* Old browsers */
+                background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
+                background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                box-shadow: 0 4px 2px -2px gray;
+               
+            }
+
+            .makeDark > .menu > .items
+            {
+                color: #363636;
+            }
+            .makeDark > .menu > .items > a
+            {
+                color: #363636;
+                 text-shadow: none;
+                filter:none;
+            }
+
+
+        </style>
+
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+        <div class="menu_container" style="width:100%;">
+        <div class="menu">
+            <div class="items">
+                <a href="#" class="scrollto" id="home">Home </a> /
+                <a href="#" class="scrollto" id="about">About </a> /
+                <a href="#" class="scrollto" id="services">Services </a>
+                <a href="#" class="scrollto" id="projects">Projects </a>
+            </div>
+        </div>
+        </div>
+
+        <div class="top">
+
+          
+
+            <div class="text_header">
+               So many people live within unhappy circumstances and yet will not take the initiative to change their 
+               situation because they are conditioned to a life of security, conformity, and conservatism, all of which may appear to give one peace of mind, 
+               but in reality nothing is more damaging to the adventurous spirit within a man than a secure future.
+            </div>
+
+        </div>
+
+        <div class="main_content">
+
+        
+            <div class="container">
+                <div style="height:900px;" class="home"><h3>Home </h3></div>
+                <div style="height:900px;" class="about"><h3>About </h3></div>
+                <div style="height:900px;" class="projects"><h3>Projects </h3></div>
+                <div style="height:900px;" class="services"><h3>Services </h3></div>
+            </div> <!-- /container -->
+
+            <div class="footer">
+
+            </div>
+
+
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+
+        <script>
+
+        $(window).on("load", function() {
+
+            var scrollTop = $(this).scrollTop();
+
+            if (scrollTop > 500)
+            {
+                $(".menu_container").addClass("makeDark");
+            }
+            else {
+                $(".menu_container").removeClass("makeDark");
+            }
+
+            $(".scrollto").click(function () {
+
+               var div_class  = $(this).attr('id');
+               var offset_top =  $("." + div_class).offset().top;
+               var top = (offset_top + $(".menu_container").height()) - 150 + "px";
+               $("html, body").animate({ scrollTop: top});
+               return false;
+            });
+
+
+            $(window).scroll(function() {
+
+                var scrollTop = $(this).scrollTop();
+                if (scrollTop > 500)
+                    $(".menu_container").addClass("makeDark");
+                else
+                    $(".menu_container").removeClass("makeDark");
+
+            });
+
+        });
+
+        </script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+    </body>
+</html>
