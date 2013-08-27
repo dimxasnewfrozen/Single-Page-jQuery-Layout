@@ -3,11 +3,127 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body, html
+{
+	margin:0px;
+	padding:0px;
+}
+
+.top {
+	height:550px; 
+	width:100%; 
+	z-index: 1;
+	top:0px;
+	background: url(../img/header_bg2.jpg) center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: 0 -100px;
+	box-shadow: 0 4px 2px -2px gray;
+}
+
+.text {
+	background-color:black;
+	margin-left:0px;
+	height:20px;
+	border:none;
+	color:#65C724;
+	outline: 0;
+}
+
+.main_content {
+width:100%;
+margin-top:3px;
+padding-top:20px;
+z-index:1000;
+position: relative;
+}
+
+.container {
+
+}
+
+.footer {
+height:300px; 
+width:100%; 
+z-index: 1;
+background: url(../img/header_bg2.jpg) center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-repeat:no-repeat;
+background-position: 0 430px;
+opacity:0.5;
+}  
+
+.menu 
+{
+margin:40px;
+}
+
+.items {
+float: right;
+font-size:30px;
+color:#4D4D4D;
+font-weight: bold;
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.items a
+{
+color:#4D4D4D;
+padding-left:10px;
+padding-right: 10px;
+}
+
+.text_header 
+{
+width:55%;
+margin:0 auto;
+text-align: center;
+padding-top:5%;
+font-size:36px;
+font-family: 'Oswald', sans-serif;
+text-shadow: 2px 2px 5px #1C1C1C;
+filter: dropshadow(color=#1C1C1C, offx=2, offy=2);
+color:white;
+line-height: 50px;
+position: relative;
+}
+
+.menu_container {
+z-index:1001;
+height:60px;
+width: 100%;
+}
+
+.makeDark {
+position: fixed;
+border-bottom:1px solid #E0E0E0;
+height:100px;
+z-index: 90000;
+background-color: white;
+}
+
+.makeDark > .menu > .items
+{
+color: #363636;
+}
+.makeDark > .menu > .items > a
+{
+color: #363636;
+ text-shadow: none;
+filter:none;
+}
 
 
-
-
-
+.home, .about, .services, .projects {
+border-bottom:1px solid #E0E0E0;
+height:870px;
+}
 
 
 
